@@ -28,7 +28,7 @@ jobs:
 
     - name: Run tests
       run: |
-        docker-compose exec app pytest
+        docker-compose exec backend manage.py test
 
     - name: Stop Docker Compose
       run: docker-compose down
