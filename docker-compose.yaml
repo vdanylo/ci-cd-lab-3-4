@@ -2,6 +2,7 @@ version: '3'
 
 services:
   frontend:
+    container_name: frontend
     build:
       context: ./frontend
       dockerfile: Dockerfile
@@ -11,6 +12,7 @@ services:
       - backend
 
   backend:
+    container_name: backend
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -18,4 +20,3 @@ services:
       - "8000:8000"
     environment:
       - DJANGO_SECRET_KEY=your_secret_key_here
-
