@@ -19,4 +19,4 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DJANGO_SECRET_KEY=your_secret_key_here
+      - DJANGO_SECRET_KEY=12345678
